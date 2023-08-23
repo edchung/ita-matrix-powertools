@@ -13634,6 +13634,20 @@ function printWheretocredit() {
 
 (0,___WEBPACK_IMPORTED_MODULE_1__.register)("other", printWheretocredit);
 
+function printEconomiles() {
+  return {
+    url:
+      "https://pqp.economiles.com/?q=" +
+      (0,_matrix5_parse_itin__WEBPACK_IMPORTED_MODULE_0__.getCurrentSegs)()
+        .map(seg =>
+          [seg.orig, seg.dest, seg.carrier, seg.bookingclass].join(",")
+        )
+        .join("|"),
+    title: "PQP Economiles"
+  };
+}
+
+(0,___WEBPACK_IMPORTED_MODULE_1__.register)("other", printEconomiles);
 
 /***/ }),
 
